@@ -1,0 +1,18 @@
+$ORIGIN example.com.
+@ 1800 IN SOA ns1.example.com. zonemaster.example.com. (
+            2014062319 ; Serial
+            4800       ; Refresh Time
+            3600       ; Retry Time
+            1209600    ; Expire Time
+            6000       ; Negative Caching Time
+            )
+
+@           3600  IN A     127.0.0.1
+@           3600  IN AAAA  ::1
+
+*           3600  IN A     127.0.0.1
+*           3600  IN AAAA  ::1
+
+@           3600  IN NS    ns1.example.com.
+@           3600  IN NS    ns2.example.com.
+@           3600  IN NS    ns3.example.com.
