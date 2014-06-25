@@ -46,13 +46,12 @@ class GitAutoDeploy(BaseHTTPRequestHandler):
 def main():
     try:
         server = None
-        print('Kurzdns Github Autodeploy Service v1.0.1-ultrastable started')
+        print('KurzDNS GitHub Autodeploy Service Thing v1.0.1-ultrastable started.')
         server = HTTPServer(('', 8001), GitAutoDeploy)
         server.serve_forever()
     except(KeyboardInterrupt, SystemExit) as e:
         if server:
             server.socket.close()
-        print "Goodbye."
 
 if __name__ == '__main__':
     main()
